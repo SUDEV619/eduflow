@@ -1,0 +1,40 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  body {
+    font-family: 'Inter', sans-serif;
+    background-color: #F5F5F5;
+    color: #2E2E2E;
+  }
+}
+
+@layer components {
+  .blob-shape {
+    border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
+    background: linear-gradient(135deg, #A8DAD6 0%, #6FB7B4 100%);
+    opacity: 0.8;
+  }
+  
+  .hero-blob {
+    border-radius: 40% 60% 60% 40% / 60% 30% 70% 40%;
+    background: linear-gradient(135deg, #4A465F 0%, #6FB7B4 100%);
+  }
+  
+  .floating-element {
+    animation: float 6s ease-in-out infinite;
+  }
+  
+  .glass-card {
+    background: rgba(255, 255, 255, 0.25);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.18);
+  }
+}
